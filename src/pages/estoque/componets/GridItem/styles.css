@@ -1,0 +1,6 @@
+.Td{
+    display: flex;
+    padding-top: 15px;
+    word-break: break-all;
+    text-align: center;
+}

@@ -1,0 +1,17 @@
+.Container{
+display: flex;
+width: 100%;
+
+}
+.Header{
+  flex-direction: column;
+}
+
+
+.HeaderTitle{
+    font-size: 20px; 
+}
+.total{
+    font-size: 20px;
+  font-weight: bold;
+}
