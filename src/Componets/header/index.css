@@ -1,0 +1,28 @@
+.main-header{
+    background-color: #DB353D;
+        height: 80px;
+       
+        
+    
+}
+.title{
+    
+    align-items:center ;
+    text-align: center;
+
+}
+
+.header-content{
+    width: 100%;
+    max-width: 930px;
+    margin: 0 auto;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-content a{
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+}

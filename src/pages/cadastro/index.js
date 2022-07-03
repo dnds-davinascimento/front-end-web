@@ -1,21 +1,20 @@
 import React,{useState} from "react";
-import { useNavigate ,Link  } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 import api from '../../services/Api';
 import './index.css';
 
-export default function Login() {
+export default function Cadastro() {
   const [nome , setNome ] =useState('');
-  const [senha , setSenha ] =useState('');
-  
-  
+  const [ email , setEmail ]= useState('');
+  const [ contato , setcontato ]= useState('');
 
   const navigate = useNavigate ()
 
 
   async function handleSumit(event){event.preventDefault()
 
-  const response = await api.post ('/sessions', {nome,senha  })
+  const response = await api.post ('/sessions', {nome,email ,contato })
 
   const { _id} = response.data;
 
@@ -39,23 +38,26 @@ export default function Login() {
         onChange={event => setNome(event.target.value) } 
       />
       
-      <label htmlFor="senha">Senha *</label>
+      <label htmlFor="email">Email *</label>
       <input 
-        id="senha" 
-        type="password" 
-        placeholder ="Seu Senha"
-        value={senha}
-        onChange={event => setSenha(event.target.value) } 
+        id="email" 
+        type="email" 
+        placeholder ="Seu Email"
+        value={email}
+        onChange={event => setEmail(event.target.value) } 
       />
       
-     
+      <label htmlFor="contato">Contato *</label>
+      <input 
+        id="contato" 
+        type="contato" 
+        placeholder ="Seu Contato"
+        value={contato}
+        onChange={event => setcontato(event.target.value) } 
+      />
 
       <button className='btn' type='subimit'>Entrar</button>
-      
-      
-      
     </form>
-    
    </div>
    )
  }

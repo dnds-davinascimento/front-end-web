@@ -42,8 +42,9 @@
   border-radius: 5px;
   cursor: pointer;
   color: white;
-  background-color: #f05a5b;
+  background-color: #338850;
 }
 .Button:hover{
-  background: #e14f50;
+  background: #84ca9c;
+  color: #db353d;
 }

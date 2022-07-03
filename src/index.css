@@ -4,18 +4,12 @@
     outline: 0;
     box-sizing: border-box;
 }
-
 html , body, #root{
     min-height: 100%;
 }
 body{
     background-size:cover ;
     -webkit-font-smoothing: antialiased !important;
+   
 }
-.container{
-    margin: 80px auto 0;
-    justify-content: center;
-    width: 100%;
-    display: flex;
-    
-}
+

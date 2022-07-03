@@ -1,5 +1,4 @@
 .login{
-    flex-direction: column;
     margin: 80px auto 0;
     width: 400px;
     max-width: 450px;
@@ -13,7 +12,7 @@
 }
 .login  form{
     display: flex;
-    
+    flex-direction: column;
 
 }
 .login form label{
@@ -43,11 +42,15 @@
 
 }
 .login button.btn:hover{
-    background: #05a538;
-    color: #dd2528;
+    background: #000000;
   }
   
 
+
+.Button:hover{
+  background: #84ca9c;
+  color: #db353d;
+}
 
 
 
